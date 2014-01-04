@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html>
+   <head>
+      <script src="waffle.js"></script>
+      
+      <style>
+        #bigIcon {
+           height: 160px;
+           width: 160px;
+           background-color: gray;
+           font-family: Meiryo;
+           color: #fff;
+           text-align: center;
+           border-radius: 4px;
+           line-height: 54px;
+        }
+        #inp {
+           background-color: gray;
+           border: solid 1px #fff;
+           width: 100px;
+           height: 100px;
+           margin-top: 25px;
+           font-size: 90px;
+           text-align: center;
+           color: #fff;
+        }
+        .palette {
+           height: 20px;
+           width: 20px;
+           border: solid 1px #ccc;
+           margin-top: 10px;
+           margin-right: 6px;
+           background-color: #ccc;
+           float: left;
+           cursor: pointer;
+        }
+        #colors {
+           width: 168px;
+        }
+        .btn {
+           margin-top: -13px;
+        }
+        #w {
+           margin-top: 15px;
+           margin-left: -3px;
+        }
+        #openBtn {
+           font-size: 9pt;
+        }
+      </style>
+   </head>
+   <body>
+      <div id='bigIcon'>
+         <input type="text" value="?" id="inp" style="background-color: gray">
+         <br>
+         <div class=btn>
+            <button id="addBtn">このページを登録</button>
+         </div>
+      </div>
+      <div id="colors">
+         <div id="gray" class="palette"></div>
+         <div id="red" class="palette"></div>
+         <div id="orange" class="palette"></div>
+         <div id="yellow" class="palette"></div>
+         <div id="green" class="palette"></div>
+         <div id="lime" class="palette"></div>
+         <div id="blue" class="palette"></div>
+         <div id="fuchsia" class="palette"></div>
+         <div id="deepskyblue" class="palette"></div>
+         
+      </div>
+      <br>
+      <br>
+      <div id="w">
+          <button id="openBtn">登録されているページを表示</button>
+      </div>
+   <script src="accessStore.js"></script>
+   <script src="ppp.js"></script>
+   </body>
+</html>
