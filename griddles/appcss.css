@@ -1,0 +1,44 @@
+﻿@font-face {
+    font-family: 'Open Sans';
+    src: url('font/OpenSans-Light.ttf') format('truetype');
+}
+
+.mn {
+    font-size: 10pt;
+    color: #444;
+    font-family: Meiryo;
+}
+
+#function_menu {
+    margin-right: 10px;
+}
+
+.user-card, .user-html, .user-edit {
+   padding: 10px;
+   font-family: Meiryo;
+   cursor: pointer;
+}
+
+.rmd {
+padding-top: 50px;
+font-size: 10pt;
+font-family: Meiryo;
+color: #444;
+}
+
+#io_center {
+text-align: left;
+width: 95%;
+background-color: #FFF;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #CCC;
+margin-top: 90px;
+margin-bottom: -90px;
+font-family: Meiryo;
+font-size: 10pt;
+}
+
+#remove_all {
+   cursor: pointer;
+}

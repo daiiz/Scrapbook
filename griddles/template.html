@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+   <head>
+     <title>#</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+     <meta name="apple-mobile-web-app-capable" content="no">
+     <!--link rel="apple-touch-icon-precomposed" href=".png" /--> 
+     <script src="assets/jquery-1.11.0.min.js"></script>
+     <script src="waffle.js"></script>
+     <link rel="stylesheet" type="text/css" href="assets/griddles.css">
+     <link rel="stylesheet" type="text/css" href="appcss.css">
+     <link rel="stylesheet" type="text/css" href="app.css">
+   </head>
+   <body>
+     <div class="AppBar user-appbar" id="app_bar">
+        <div class="AppIconArea"> 
+           <img src="4848.png" class="Icon" id="app_icon" title='オプションページを開く'> <span id="app_name"></span>
+        </div>
+        <div class="MenuBox">
+            <span class='mn'>メニュー</span> 
+               <select id="function_menu">
+                  <option value="user-text">アイコンで表示</option>
+                  <option value="user-card">カードで表示</option>
+                  <option value="user-edit">編集</option>
+                  <option value="func_show_imex">インポート・エクスポート</option>
+               </select>
+            <span class='mn'>タグ</span> <select id="select_menu"></select>
+        </div>
+     </div>
+     
+     <!-- 独自拡張 -->
+     <center>
+       <div id='io_center' style='display:none'>
+          <div id="_O_">
+             <b>共有コードをエクスポート</b>
+                <div class="ww">共有コード:　
+                    <a href="#" download="" id="DL">ダウンロード</a>
+                    <a id="remove_all" style="display: inline;">アプリ内のページデータを消去</a>
+                    <button id="outfile" class="_">出力</button>
+                    <br>
+                    <br>
+                    または
+                    <br>
+                    <br>
+                    <a href='https://sites.google.com/site/mobiledaiz/scrapbook' target='_blank' style='color: #555'>Androidアプリ</a>用の共有コード：
+                    <input type="text" id="InO" readonly="readonly" value="" class="">
+                </div>
+          </div>
+          <br>
+          <div id="_I_">
+             <b>共有コードをインポート</b>
+                <div class="ww">
+                    <input type="file" id="files" name="files[]" multiple="">
+                    <br>
+                    <br>
+                    または
+                    <br>
+                    <br>
+                    <input type="text" id="InI" value="" class="" placeholder="Androidアプリ用の共有コード">
+                    <button id="import" class="">インポート</button>
+                </div>
+          </div>
+       </div>
+     </center>
+     <!-- 独自拡張 -->
+     
+     <div id="main">
+        <div id="stage">
+        </div>
+     </div>
+     
+     <div style="visibility: hidden">
+         <img src="#" style="display: block" id="IMAGE">
+     </div>
+     
+     <script src="assets/griddles-manifest.js"></script>
+     <script src="assets/griddles.js"></script>
+     <!-- other scripts -->
+         <!-- e.g. myapp.js -->
+         <script src="accessStore.js"></script>
+         <script src="myapp.js"></script>
+   </body>
+</html>

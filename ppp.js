@@ -28,10 +28,11 @@ function addPage(e) {
 
 function added() {
     console.log("the item was added.");
+    window.close();
 }
 
 function openPage(e) {
-   chrome.tabs.create({url: "main.html"}, function() {
+   chrome.tabs.create({url: "griddles/template.html"}, function() {
        window.close();
    });
    //window.open("main.html");
