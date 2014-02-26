@@ -16,7 +16,7 @@ function showQ(q) {
 function color(c) {
   var rc;
   switch(c) {
-    case "lime": rc = "#59BB0C"; break;
+    case "lime": rc = "#59BB0A"; break;
     default: rc = c; break;
   }
   return rc;

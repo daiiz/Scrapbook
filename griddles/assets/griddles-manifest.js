@@ -15,7 +15,7 @@ griddles.phonegap = false;
 griddles.webPage = true;
 
 griddles.layout = {
-    "page_title": "登録ページ一覧",
+    "page_title": "スクラップブック",
     "app_name": "scrapbook",
     "app_icon": "4848.png",
     "background_color": "#eee",
