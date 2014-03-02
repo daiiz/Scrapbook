@@ -1,5 +1,5 @@
 ﻿// # releaseするときは、0にする。
-var dev_chanel = 1;
+var dev_chanel = 0;
 
 !function() {
 if(dev_chanel == 1) {
