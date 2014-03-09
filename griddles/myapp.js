@@ -7,6 +7,7 @@ myApp.keepDATA = [];
 function showQ(q) {
    console.info("showQ: "+q);
    var mkys = getKEYbyQuery(q);
+   //console.log(mkys.length);
      if(mkys != undefined) {
          getItem(mkys, gotItems);
      }
@@ -68,11 +69,13 @@ function rmv_all() {
 function gotItems(j) {
    DATA = [];
    var arr;
+   //console.log(j.uniqueKeys.length);
    for(var w = 0; w < j.uniqueKeys.length; w++) {
        var mky = j.uniqueKeys[w];
        DATA.push(j.items[mky]);
    }
    var type = document.getElementById("function_menu").value;
+   //console.log(DATA.length);
      if(type == "user-text") {
          document.getElementById("io_center").style.display = "none";
          arr = setArrForIcon(DATA, type);
@@ -99,6 +102,7 @@ function gotItems(j) {
      /* ここまで */
      
      if(arr != "N") {
+        //console.log(arr.length);
         myApp.renderingCards(arr);
      }
 }

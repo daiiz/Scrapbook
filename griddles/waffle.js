@@ -21,6 +21,7 @@ waffle.hack = {};
 waffle.hack.all_uniqueKeys = [];
 waffle.hack.all_indexs = [];
 waffle.hack.tabledata = [];
+waffle.commonKey = "すべて";
 
 // cb追加　2013/09/29
 waffle.hack.showTable = function(cb) {
@@ -339,6 +340,7 @@ waffle.getUniqueKeys = function(request_y) {
           return rtn_xs;
        }
    }
+
 }
 
 waffle.getItems = function(reqest_xs, callback) {
