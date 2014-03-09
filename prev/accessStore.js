@@ -28,12 +28,9 @@ function validQuery() {
 /* queryに、"すべて" を自動付加 */
 function addItem(key, query, json, callback) {
   if(key != "" && json != "") {
-      var arr = [key, _Q_ALL_];
-      //console.log(arr);
+    var arr = [key, _Q_ALL_];
     for(var x = 0; x < query.length; x++) {
-        if(query[x] != _Q_ALL_) {  //追加
-           arr.push(query[x]);
-        }
+        arr.push(query[x]);
     }
     localStore.setItem(arr, json, callback);
   }
@@ -48,7 +45,6 @@ function showTable(cb) {
 /* query からメインキーを取得する */
 function getKEYbyQuery(q) {
     main_keys = localStore.getUniqueKeys(q);
-    //console.log(main_keys.length);
     return main_keys;
 }
 
@@ -103,10 +99,10 @@ function __import_Item() {
    var key = json["tag_x"];
    __import_now__ = __import_now__ + 1;
    if(key != "" && json != "") {
-     var arr = [key, _Q_ALL_];
-     if(__import_query__ != "" && __import_query__ != _Q_ALL_) {  //追加
-        arr = [key, _Q_ALL_, __import_query__];
-     }
+    var arr = [key, _Q_ALL_];
+        if(__import_query__ != "") {
+           arr = [key, _Q_ALL_, __import_query__];
+        }
     console.log(arr);
     localStore.plusItem(arr, json, __import_Item);
    }
