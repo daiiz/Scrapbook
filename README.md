@@ -1,4 +1,4 @@
-﻿#Scrapbook - Website Launcher
+﻿#Scrapbook - page clipper
 
 ## Installation Guide
 
