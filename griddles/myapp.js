@@ -18,6 +18,7 @@ function color(c) {
   var rc;
   switch(c) {
     case "lime": rc = "#59BB0A"; break;
+    case "yellow": rc = "#FFDD00";break;
     default: rc = c; break;
   }
   return rc;
